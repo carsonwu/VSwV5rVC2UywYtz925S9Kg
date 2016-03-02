@@ -21,6 +21,8 @@
 		37303AD01C861548002A5232 /* AftershipTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303ACE1C861548002A5232 /* AftershipTracking.h */; };
 		37303AD11C861548002A5232 /* AftershipTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303ACF1C861548002A5232 /* AftershipTracking.m */; };
 		D40869832D15E57742784AE0 /* libPods-Aftership-SDK-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */; };
+		D891B0D31C86BFA500F4427F /* AftershipBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D891B0D11C86BFA500F4427F /* AftershipBaseRequest.h */; };
+		D891B0D41C86BFA500F4427F /* AftershipBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B0D21C86BFA500F4427F /* AftershipBaseRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		37303ACE1C861548002A5232 /* AftershipTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipTracking.h; sourceTree = "<group>"; };
 		37303ACF1C861548002A5232 /* AftershipTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTracking.m; sourceTree = "<group>"; };
 		AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aftership-SDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D891B0D11C86BFA500F4427F /* AftershipBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipBaseRequest.h; sourceTree = "<group>"; };
+		D891B0D21C86BFA500F4427F /* AftershipBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipBaseRequest.m; sourceTree = "<group>"; };
 		ED1B8E8ADB7EFD66FE379895 /* Pods-Aftership-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aftership-SDK-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 				37303ACD1C86152C002A5232 /* Data models */,
 				37303AC11C85DF92002A5232 /* AftershipApiManager.h */,
 				37303AC21C85DF92002A5232 /* AftershipApiManager.m */,
+				D891B0D11C86BFA500F4427F /* AftershipBaseRequest.h */,
+				D891B0D21C86BFA500F4427F /* AftershipBaseRequest.m */,
 				37303AC51C8614B8002A5232 /* AftershipGetTrackingRequest.h */,
 				37303AC61C8614B8002A5232 /* AftershipGetTrackingRequest.m */,
 				37303AC91C8614FE002A5232 /* AftershipCreateTrackingRequest.h */,
@@ -165,6 +171,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D891B0D31C86BFA500F4427F /* AftershipBaseRequest.h in Headers */,
 				37303ACB1C8614FE002A5232 /* AftershipCreateTrackingRequest.h in Headers */,
 				37303AC31C85DF92002A5232 /* AftershipApiManager.h in Headers */,
 				37303AD01C861548002A5232 /* AftershipTracking.h in Headers */,
@@ -306,6 +313,7 @@
 			files = (
 				37303ACC1C8614FE002A5232 /* AftershipCreateTrackingRequest.m in Sources */,
 				37303AC81C8614B8002A5232 /* AftershipGetTrackingRequest.m in Sources */,
+				D891B0D41C86BFA500F4427F /* AftershipBaseRequest.m in Sources */,
 				37303AC41C85DF92002A5232 /* AftershipApiManager.m in Sources */,
 				37303AD11C861548002A5232 /* AftershipTracking.m in Sources */,
 			);

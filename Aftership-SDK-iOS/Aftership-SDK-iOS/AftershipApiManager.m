@@ -18,20 +18,23 @@
     if (self == [super init]) {
         self.apiKey = apiKey;
         self.baseUrl = [NSString stringWithFormat:@"%@/v%@/", BASE_URL, API_VERSION];
+        JSONRequestSerializer = [AFJSONRequestSerializer serializer];
+        
+        //set up default request header. Including: api key, content type and SDK version.
+        [JSONRequestSerializer setValue:self.apiKey
+                     forHTTPHeaderField:@"aftership-api-key"];
+        [JSONRequestSerializer setValue:@"application/json"
+                     forHTTPHeaderField:@"Content-Type"];
+        [JSONRequestSerializer setValue:[NSString stringWithFormat:@"aftership-ios-sdk %@",
+                                         [[[NSBundle mainBundle] infoDictionary]
+                                          objectForKey:@"CFBundleShortVersionString"]]
+                     forHTTPHeaderField:@"aftership-user-agent"];
     }
     return self;
 }
 
-+ (instancetype)clientWithApiKey:(NSString *)apiKey {
++ (instancetype)managerWithApiKey:(NSString *)apiKey {
     return [[self alloc] initWithApiKey:apiKey];
-}
-
-- (instancetype)initWithApiKey:(NSString *)apiKey baseUrl:(NSString *)baseUrl {
-    if (self == [super init]) {
-        self.apiKey = apiKey;
-        self.baseUrl = baseUrl;
-    }
-    return self;
 }
 
 @end

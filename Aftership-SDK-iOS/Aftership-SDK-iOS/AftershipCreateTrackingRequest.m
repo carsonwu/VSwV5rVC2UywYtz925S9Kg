@@ -10,4 +10,30 @@
 
 @implementation AftershipCreateTrackingRequest
 
+- (instancetype)initWithTracking:(AftershipTracking *)tracking
+                 completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+    self = [super init];
+    if (self) {
+        self.httpMtehod = API_HTTP_METHOD_POST;
+        self.path = @"trackings";
+        self.completionHandler = completionBlock;
+        self.tracking = tracking;
+    }
+    
+    return self;
+}
+
++ (instancetype)requestWithTracking:(AftershipTracking *)tracking
+                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+    return [[self alloc] initWithTracking:tracking
+                          completionBlock:completionBlock];
+}
+
+- (NSDictionary*)paramDict{
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+
+    
+    return params;
+}
+
 @end

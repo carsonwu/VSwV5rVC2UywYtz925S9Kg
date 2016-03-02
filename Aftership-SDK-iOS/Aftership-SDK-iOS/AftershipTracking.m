@@ -10,4 +10,16 @@
 
 @implementation AftershipTracking
 
+- (instancetype)initWithDictionary:(NSDictionary *)dict{
+    if (self = [super init]) {
+//        self.createTime = 
+    }
+    return self;
+}
+
+- (NSDictionary *)getParamDict{
+    NSDictionary *dic = [NSDictionary dictionary];
+    return dic;
+}
+
 @end

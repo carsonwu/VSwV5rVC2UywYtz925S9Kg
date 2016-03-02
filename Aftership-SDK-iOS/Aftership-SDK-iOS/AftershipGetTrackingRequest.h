@@ -7,7 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AftershipBaseRequest.h"
+#import "AftershipTracking.h"
 
-@interface AftershipGetTrackingRequest : NSObject
+@interface AftershipGetTrackingRequest : AftershipBaseRequest
+
+//get-tracking request specific properties
+@property (nonatomic, strong) NSString  *identifier;
+@property (nonatomic, strong) NSString  *slug;
+@property (nonatomic, strong) NSString  *trackingNumber;
+
+//Optional parameters
+@property (nonatomic, strong) NSString  *fields;
+@property (nonatomic, strong) NSString  *lang;
+
++ (instancetype)requestWithTrackingNumber:(NSString *)trackingNumber
+                                     slug:(NSString *)slug
+                          completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
+
++ (instancetype)requestWithIdentifier:(NSString *)identifier
+                      completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
 
 @end

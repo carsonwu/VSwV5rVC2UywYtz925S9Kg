@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AftershipBaseRequest.h"
+#import "AftershipTracking.h"
 
-@interface AftershipCreateTrackingRequest : NSObject
+@interface AftershipCreateTrackingRequest : AftershipBaseRequest
+
+@property (nonatomic, strong) AftershipTracking *tracking;
+
++ (instancetype)requestWithTracking:(AftershipTracking *)tracking
+                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
 
 @end
