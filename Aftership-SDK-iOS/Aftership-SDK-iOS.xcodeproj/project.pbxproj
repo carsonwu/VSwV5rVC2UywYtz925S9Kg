@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37303AA61C85D182002A5232 /* Aftership-SDK-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303AA51C85D181002A5232 /* Aftership-SDK-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37303AAD1C85D182002A5232 /* Aftership-SDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */; };
+		37303AB21C85D182002A5232 /* Aftership_SDK_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303AB11C85D182002A5232 /* Aftership_SDK_iOSTests.m */; };
+		37303ABD1C85DEAA002A5232 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303ABC1C85DEAA002A5232 /* UIKit.framework */; };
+		37303ABF1C85DEB3002A5232 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303ABE1C85DEB3002A5232 /* Foundation.framework */; };
+		37303AC31C85DF92002A5232 /* AftershipApiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303AC11C85DF92002A5232 /* AftershipApiManager.h */; };
+		37303AC41C85DF92002A5232 /* AftershipApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303AC21C85DF92002A5232 /* AftershipApiManager.m */; };
+		37303AC71C8614B8002A5232 /* AftershipGetTrackingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303AC51C8614B8002A5232 /* AftershipGetTrackingRequest.h */; };
+		37303AC81C8614B8002A5232 /* AftershipGetTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303AC61C8614B8002A5232 /* AftershipGetTrackingRequest.m */; };
+		37303ACB1C8614FE002A5232 /* AftershipCreateTrackingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303AC91C8614FE002A5232 /* AftershipCreateTrackingRequest.h */; };
+		37303ACC1C8614FE002A5232 /* AftershipCreateTrackingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303ACA1C8614FE002A5232 /* AftershipCreateTrackingRequest.m */; };
+		37303AD01C861548002A5232 /* AftershipTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303ACE1C861548002A5232 /* AftershipTracking.h */; };
+		37303AD11C861548002A5232 /* AftershipTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303ACF1C861548002A5232 /* AftershipTracking.m */; };
+		D40869832D15E57742784AE0 /* libPods-Aftership-SDK-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37303AAE1C85D182002A5232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37303A991C85D181002A5232 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37303AA11C85D181002A5232;
+			remoteInfo = "Aftership-SDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2084287577F5F2F9B6398C27 /* Pods-Aftership-SDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aftership-SDK-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Aftership-SDK-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37303AA51C85D181002A5232 /* Aftership-SDK-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aftership-SDK-iOS.h"; sourceTree = "<group>"; };
+		37303AA71C85D182002A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aftership-SDK-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37303AB11C85D182002A5232 /* Aftership_SDK_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aftership_SDK_iOSTests.m; sourceTree = "<group>"; };
+		37303AB31C85D182002A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37303ABC1C85DEAA002A5232 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37303ABE1C85DEB3002A5232 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37303AC11C85DF92002A5232 /* AftershipApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipApiManager.h; sourceTree = "<group>"; };
+		37303AC21C85DF92002A5232 /* AftershipApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipApiManager.m; sourceTree = "<group>"; };
+		37303AC51C8614B8002A5232 /* AftershipGetTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipGetTrackingRequest.h; sourceTree = "<group>"; };
+		37303AC61C8614B8002A5232 /* AftershipGetTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipGetTrackingRequest.m; sourceTree = "<group>"; };
+		37303AC91C8614FE002A5232 /* AftershipCreateTrackingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipCreateTrackingRequest.h; sourceTree = "<group>"; };
+		37303ACA1C8614FE002A5232 /* AftershipCreateTrackingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipCreateTrackingRequest.m; sourceTree = "<group>"; };
+		37303ACE1C861548002A5232 /* AftershipTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipTracking.h; sourceTree = "<group>"; };
+		37303ACF1C861548002A5232 /* AftershipTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipTracking.m; sourceTree = "<group>"; };
+		AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aftership-SDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED1B8E8ADB7EFD66FE379895 /* Pods-Aftership-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aftership-SDK-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37303A9E1C85D181002A5232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37303ABF1C85DEB3002A5232 /* Foundation.framework in Frameworks */,
+				37303ABD1C85DEAA002A5232 /* UIKit.framework in Frameworks */,
+				D40869832D15E57742784AE0 /* libPods-Aftership-SDK-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37303AA91C85D182002A5232 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37303AAD1C85D182002A5232 /* Aftership-SDK-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37303A981C85D181002A5232 = {
+			isa = PBXGroup;
+			children = (
+				37303AA41C85D181002A5232 /* Aftership-SDK-iOS */,
+				37303AB01C85D182002A5232 /* Aftership-SDK-iOSTests */,
+				37303AA31C85D181002A5232 /* Products */,
+				F2D3703B2CCFE0E06AF024C9 /* Pods */,
+				B3BBCCFBDDFD589B5A572BA1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37303AA31C85D181002A5232 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */,
+				37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37303AA41C85D181002A5232 /* Aftership-SDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				37303AC01C85DECD002A5232 /* Classes */,
+				37303AA51C85D181002A5232 /* Aftership-SDK-iOS.h */,
+				37303AA71C85D182002A5232 /* Info.plist */,
+			);
+			path = "Aftership-SDK-iOS";
+			sourceTree = "<group>";
+		};
+		37303AB01C85D182002A5232 /* Aftership-SDK-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				37303AB11C85D182002A5232 /* Aftership_SDK_iOSTests.m */,
+				37303AB31C85D182002A5232 /* Info.plist */,
+			);
+			path = "Aftership-SDK-iOSTests";
+			sourceTree = "<group>";
+		};
+		37303AC01C85DECD002A5232 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				37303ACD1C86152C002A5232 /* Data models */,
+				37303AC11C85DF92002A5232 /* AftershipApiManager.h */,
+				37303AC21C85DF92002A5232 /* AftershipApiManager.m */,
+				37303AC51C8614B8002A5232 /* AftershipGetTrackingRequest.h */,
+				37303AC61C8614B8002A5232 /* AftershipGetTrackingRequest.m */,
+				37303AC91C8614FE002A5232 /* AftershipCreateTrackingRequest.h */,
+				37303ACA1C8614FE002A5232 /* AftershipCreateTrackingRequest.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		37303ACD1C86152C002A5232 /* Data models */ = {
+			isa = PBXGroup;
+			children = (
+				37303ACE1C861548002A5232 /* AftershipTracking.h */,
+				37303ACF1C861548002A5232 /* AftershipTracking.m */,
+			);
+			name = "Data models";
+			sourceTree = "<group>";
+		};
+		B3BBCCFBDDFD589B5A572BA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37303ABE1C85DEB3002A5232 /* Foundation.framework */,
+				37303ABC1C85DEAA002A5232 /* UIKit.framework */,
+				AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2D3703B2CCFE0E06AF024C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2084287577F5F2F9B6398C27 /* Pods-Aftership-SDK-iOS.debug.xcconfig */,
+				ED1B8E8ADB7EFD66FE379895 /* Pods-Aftership-SDK-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		37303A9F1C85D181002A5232 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37303ACB1C8614FE002A5232 /* AftershipCreateTrackingRequest.h in Headers */,
+				37303AC31C85DF92002A5232 /* AftershipApiManager.h in Headers */,
+				37303AD01C861548002A5232 /* AftershipTracking.h in Headers */,
+				37303AA61C85D182002A5232 /* Aftership-SDK-iOS.h in Headers */,
+				37303AC71C8614B8002A5232 /* AftershipGetTrackingRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		37303AA11C85D181002A5232 /* Aftership-SDK-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOS" */;
+			buildPhases = (
+				C46ED9291DF4F92CB5D89FCA /* Check Pods Manifest.lock */,
+				37303A9D1C85D181002A5232 /* Sources */,
+				37303A9E1C85D181002A5232 /* Frameworks */,
+				37303A9F1C85D181002A5232 /* Headers */,
+				37303AA01C85D181002A5232 /* Resources */,
+				408BC417F554609BC520B2DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aftership-SDK-iOS";
+			productName = "Aftership-SDK-iOS";
+			productReference = 37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		37303AAB1C85D182002A5232 /* Aftership-SDK-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOSTests" */;
+			buildPhases = (
+				37303AA81C85D182002A5232 /* Sources */,
+				37303AA91C85D182002A5232 /* Frameworks */,
+				37303AAA1C85D182002A5232 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37303AAF1C85D182002A5232 /* PBXTargetDependency */,
+			);
+			name = "Aftership-SDK-iOSTests";
+			productName = "Aftership-SDK-iOSTests";
+			productReference = 37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37303A991C85D181002A5232 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = carson;
+				TargetAttributes = {
+					37303AA11C85D181002A5232 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					37303AAB1C85D182002A5232 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership-SDK-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37303A981C85D181002A5232;
+			productRefGroup = 37303AA31C85D181002A5232 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37303AA11C85D181002A5232 /* Aftership-SDK-iOS */,
+				37303AAB1C85D182002A5232 /* Aftership-SDK-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37303AA01C85D181002A5232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37303AAA1C85D182002A5232 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		408BC417F554609BC520B2DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C46ED9291DF4F92CB5D89FCA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37303A9D1C85D181002A5232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37303ACC1C8614FE002A5232 /* AftershipCreateTrackingRequest.m in Sources */,
+				37303AC81C8614B8002A5232 /* AftershipGetTrackingRequest.m in Sources */,
+				37303AC41C85DF92002A5232 /* AftershipApiManager.m in Sources */,
+				37303AD11C861548002A5232 /* AftershipTracking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37303AA81C85D182002A5232 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37303AB21C85D182002A5232 /* Aftership_SDK_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37303AAF1C85D182002A5232 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37303AA11C85D181002A5232 /* Aftership-SDK-iOS */;
+			targetProxy = 37303AAE1C85D182002A5232 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37303AB41C85D182002A5232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37303AB51C85D182002A5232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37303AB71C85D182002A5232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2084287577F5F2F9B6398C27 /* Pods-Aftership-SDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Aftership-SDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		37303AB81C85D182002A5232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED1B8E8ADB7EFD66FE379895 /* Pods-Aftership-SDK-iOS.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Aftership-SDK-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		37303ABA1C85D182002A5232 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Aftership-SDK-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37303ABB1C85D182002A5232 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Aftership-SDK-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership-SDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37303AB41C85D182002A5232 /* Debug */,
+				37303AB51C85D182002A5232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37303AB71C85D182002A5232 /* Debug */,
+				37303AB81C85D182002A5232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37303ABA1C85D182002A5232 /* Debug */,
+				37303ABB1C85D182002A5232 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37303A991C85D181002A5232 /* Project object */;
+}
