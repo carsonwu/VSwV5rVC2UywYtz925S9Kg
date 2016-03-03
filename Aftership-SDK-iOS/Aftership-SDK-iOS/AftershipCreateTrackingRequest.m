@@ -30,9 +30,9 @@
 }
 
 - (NSDictionary*)paramDict{
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    
+    NSDictionary *params = [self.tracking getParamDict];
 
-    //TODO: get param dict for create tracking api call
     return params;
 }
 

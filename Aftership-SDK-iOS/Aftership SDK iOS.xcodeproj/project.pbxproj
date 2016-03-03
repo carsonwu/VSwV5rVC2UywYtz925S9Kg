@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		37303AA61C85D182002A5232 /* Aftership-SDK-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 37303AA51C85D181002A5232 /* Aftership-SDK-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		37303AAD1C85D182002A5232 /* Aftership-SDK-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */; };
+		37303AAD1C85D182002A5232 /* Aftership SDK iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303AA21C85D181002A5232 /* Aftership SDK iOS.framework */; };
 		37303AB21C85D182002A5232 /* Aftership_SDK_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37303AB11C85D182002A5232 /* Aftership_SDK_iOSTests.m */; };
 		37303ABD1C85DEAA002A5232 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303ABC1C85DEAA002A5232 /* UIKit.framework */; };
 		37303ABF1C85DEB3002A5232 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37303ABE1C85DEB3002A5232 /* Foundation.framework */; };
@@ -23,6 +23,10 @@
 		D40869832D15E57742784AE0 /* libPods-Aftership-SDK-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */; };
 		D891B0D31C86BFA500F4427F /* AftershipBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D891B0D11C86BFA500F4427F /* AftershipBaseRequest.h */; };
 		D891B0D41C86BFA500F4427F /* AftershipBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B0D21C86BFA500F4427F /* AftershipBaseRequest.m */; };
+		D891B0D71C87EF4600F4427F /* AftershipMeta.h in Headers */ = {isa = PBXBuildFile; fileRef = D891B0D51C87EF4600F4427F /* AftershipMeta.h */; };
+		D891B0D81C87EF4600F4427F /* AftershipMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B0D61C87EF4600F4427F /* AftershipMeta.m */; };
+		D891B0DB1C88091900F4427F /* AftershipError.h in Headers */ = {isa = PBXBuildFile; fileRef = D891B0D91C88091900F4427F /* AftershipError.h */; };
+		D891B0DC1C88091900F4427F /* AftershipError.m in Sources */ = {isa = PBXBuildFile; fileRef = D891B0DA1C88091900F4427F /* AftershipError.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +41,10 @@
 
 /* Begin PBXFileReference section */
 		2084287577F5F2F9B6398C27 /* Pods-Aftership-SDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aftership-SDK-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Aftership-SDK-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37303AA21C85D181002A5232 /* Aftership SDK iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Aftership SDK iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37303AA51C85D181002A5232 /* Aftership-SDK-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aftership-SDK-iOS.h"; sourceTree = "<group>"; };
 		37303AA71C85D182002A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aftership-SDK-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37303AAC1C85D182002A5232 /* Aftership SDK iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Aftership SDK iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37303AB11C85D182002A5232 /* Aftership_SDK_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Aftership_SDK_iOSTests.m; sourceTree = "<group>"; };
 		37303AB31C85D182002A5232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37303ABC1C85DEAA002A5232 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,10 @@
 		AD21DF31A3D1DDC1D335E164 /* libPods-Aftership-SDK-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Aftership-SDK-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D891B0D11C86BFA500F4427F /* AftershipBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipBaseRequest.h; sourceTree = "<group>"; };
 		D891B0D21C86BFA500F4427F /* AftershipBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipBaseRequest.m; sourceTree = "<group>"; };
+		D891B0D51C87EF4600F4427F /* AftershipMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipMeta.h; sourceTree = "<group>"; };
+		D891B0D61C87EF4600F4427F /* AftershipMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipMeta.m; sourceTree = "<group>"; };
+		D891B0D91C88091900F4427F /* AftershipError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AftershipError.h; sourceTree = "<group>"; };
+		D891B0DA1C88091900F4427F /* AftershipError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AftershipError.m; sourceTree = "<group>"; };
 		ED1B8E8ADB7EFD66FE379895 /* Pods-Aftership-SDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aftership-SDK-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aftership-SDK-iOS/Pods-Aftership-SDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37303AAD1C85D182002A5232 /* Aftership-SDK-iOS.framework in Frameworks */,
+				37303AAD1C85D182002A5232 /* Aftership SDK iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +103,8 @@
 		37303AA31C85D181002A5232 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */,
-				37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */,
+				37303AA21C85D181002A5232 /* Aftership SDK iOS.framework */,
+				37303AAC1C85D182002A5232 /* Aftership SDK iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +140,8 @@
 				37303AC61C8614B8002A5232 /* AftershipGetTrackingRequest.m */,
 				37303AC91C8614FE002A5232 /* AftershipCreateTrackingRequest.h */,
 				37303ACA1C8614FE002A5232 /* AftershipCreateTrackingRequest.m */,
+				D891B0D91C88091900F4427F /* AftershipError.h */,
+				D891B0DA1C88091900F4427F /* AftershipError.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 			children = (
 				37303ACE1C861548002A5232 /* AftershipTracking.h */,
 				37303ACF1C861548002A5232 /* AftershipTracking.m */,
+				D891B0D51C87EF4600F4427F /* AftershipMeta.h */,
+				D891B0D61C87EF4600F4427F /* AftershipMeta.m */,
 			);
 			name = "Data models";
 			sourceTree = "<group>";
@@ -171,11 +183,13 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D891B0D71C87EF4600F4427F /* AftershipMeta.h in Headers */,
 				D891B0D31C86BFA500F4427F /* AftershipBaseRequest.h in Headers */,
 				37303ACB1C8614FE002A5232 /* AftershipCreateTrackingRequest.h in Headers */,
 				37303AC31C85DF92002A5232 /* AftershipApiManager.h in Headers */,
 				37303AD01C861548002A5232 /* AftershipTracking.h in Headers */,
 				37303AA61C85D182002A5232 /* Aftership-SDK-iOS.h in Headers */,
+				D891B0DB1C88091900F4427F /* AftershipError.h in Headers */,
 				37303AC71C8614B8002A5232 /* AftershipGetTrackingRequest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,9 +197,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		37303AA11C85D181002A5232 /* Aftership-SDK-iOS */ = {
+		37303AA11C85D181002A5232 /* Aftership SDK iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOS" */;
+			buildConfigurationList = 37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership SDK iOS" */;
 			buildPhases = (
 				C46ED9291DF4F92CB5D89FCA /* Check Pods Manifest.lock */,
 				37303A9D1C85D181002A5232 /* Sources */,
@@ -198,14 +212,14 @@
 			);
 			dependencies = (
 			);
-			name = "Aftership-SDK-iOS";
+			name = "Aftership SDK iOS";
 			productName = "Aftership-SDK-iOS";
-			productReference = 37303AA21C85D181002A5232 /* Aftership-SDK-iOS.framework */;
+			productReference = 37303AA21C85D181002A5232 /* Aftership SDK iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		37303AAB1C85D182002A5232 /* Aftership-SDK-iOSTests */ = {
+		37303AAB1C85D182002A5232 /* Aftership SDK iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOSTests" */;
+			buildConfigurationList = 37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership SDK iOSTests" */;
 			buildPhases = (
 				37303AA81C85D182002A5232 /* Sources */,
 				37303AA91C85D182002A5232 /* Frameworks */,
@@ -216,9 +230,9 @@
 			dependencies = (
 				37303AAF1C85D182002A5232 /* PBXTargetDependency */,
 			);
-			name = "Aftership-SDK-iOSTests";
+			name = "Aftership SDK iOSTests";
 			productName = "Aftership-SDK-iOSTests";
-			productReference = 37303AAC1C85D182002A5232 /* Aftership-SDK-iOSTests.xctest */;
+			productReference = 37303AAC1C85D182002A5232 /* Aftership SDK iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership-SDK-iOS" */;
+			buildConfigurationList = 37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership SDK iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -250,8 +264,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37303AA11C85D181002A5232 /* Aftership-SDK-iOS */,
-				37303AAB1C85D182002A5232 /* Aftership-SDK-iOSTests */,
+				37303AA11C85D181002A5232 /* Aftership SDK iOS */,
+				37303AAB1C85D182002A5232 /* Aftership SDK iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,9 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				37303ACC1C8614FE002A5232 /* AftershipCreateTrackingRequest.m in Sources */,
+				D891B0D81C87EF4600F4427F /* AftershipMeta.m in Sources */,
 				37303AC81C8614B8002A5232 /* AftershipGetTrackingRequest.m in Sources */,
 				D891B0D41C86BFA500F4427F /* AftershipBaseRequest.m in Sources */,
 				37303AC41C85DF92002A5232 /* AftershipApiManager.m in Sources */,
+				D891B0DC1C88091900F4427F /* AftershipError.m in Sources */,
 				37303AD11C861548002A5232 /* AftershipTracking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +348,7 @@
 /* Begin PBXTargetDependency section */
 		37303AAF1C85D182002A5232 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37303AA11C85D181002A5232 /* Aftership-SDK-iOS */;
+			target = 37303AA11C85D181002A5232 /* Aftership SDK iOS */;
 			targetProxy = 37303AAE1C85D182002A5232 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,7 +454,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Aftership SDK iOS";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -455,7 +471,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Aftership SDK iOS";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -466,7 +482,7 @@
 				INFOPLIST_FILE = "Aftership-SDK-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Aftership SDK iOS";
 			};
 			name = Debug;
 		};
@@ -476,14 +492,14 @@
 				INFOPLIST_FILE = "Aftership-SDK-iOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.carson.Aftership-SDK-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Aftership SDK iOS";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership-SDK-iOS" */ = {
+		37303A9C1C85D181002A5232 /* Build configuration list for PBXProject "Aftership SDK iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37303AB41C85D182002A5232 /* Debug */,
@@ -492,7 +508,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOS" */ = {
+		37303AB61C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership SDK iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37303AB71C85D182002A5232 /* Debug */,
@@ -501,7 +517,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership-SDK-iOSTests" */ = {
+		37303AB91C85D182002A5232 /* Build configuration list for PBXNativeTarget "Aftership SDK iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37303ABA1C85D182002A5232 /* Debug */,

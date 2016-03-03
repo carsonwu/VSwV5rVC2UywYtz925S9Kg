@@ -37,6 +37,18 @@
     return [[self alloc] initWithApiKey:apiKey];
 }
 
+- (NSError*)parseMetaForError:(NSDictionary *)metaDict{
+    NSError *err = nil;
+    AftershipMeta *meta = [[AftershipMeta alloc] initWithDict:metaDict];
+    int responseCode = meta.code.intValue;
+    if (responseCode >= 200 && responseCode < 300) {
+        //successful response
+    }else{
+        err = [AftershipError errorWithMeta:meta];
+    }
+    return err;
+}
+
 - (void)performRequest:(AftershipBaseRequest *)request{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = JSONRequestSerializer;
@@ -52,14 +64,20 @@
      */
     void (^successfulBlock)(NSURLSessionDataTask * _Nonnull task, id _Nullable result) = ^(NSURLSessionDataTask * task, id resultData){
         
-        // TODO: META HANDLING(set custom error): rate limit(Parse 'task.response')
-        // TODO: NON-JSON RESPONSE HANDLING
+        NSError *error = [self parseMetaForError:resultData[@"meta"]];
+        
+        //Rate limit handling: retrive rate limit info from response header and add to 'dataDictionary' for user reference
+        NSHTTPURLResponse *response = (NSHTTPURLResponse*) task.response;
+        NSDictionary *headerDict = response.allHeaderFields;
+        NSDictionary *rateLimitDict = @{@"X-RateLimit-Reset":headerDict[@"X-RateLimit-Reset"],
+                                        @"X-RateLimit-Limit":headerDict[@"X-RateLimit-Limit"],
+                                        @"X-RateLimit-Remaining":headerDict[@"X-RateLimit-Remaining"],};
+
+        NSMutableDictionary *dataDictionary = [NSMutableDictionary dictionaryWithDictionary:resultData[@"data"]];
+        [dataDictionary setObject:rateLimitDict forKey:@"rate_limit_info"];
+        
         if (request.completionHandler) {
-            if ([resultData isKindOfClass:[NSArray class]]) {
-                request.completionHandler(request, (NSArray*)resultData, nil);
-            }else if([resultData isKindOfClass:[NSDictionary class]]){
-                request.completionHandler(request, (NSDictionary*)resultData, nil);
-            }
+            request.completionHandler(request, dataDictionary, error);
         }
     };
     

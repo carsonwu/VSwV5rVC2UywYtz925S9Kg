@@ -19,13 +19,13 @@
 @property (nonatomic, strong) NSString* trackingAccountNumber;
 @property (nonatomic, strong) NSString* trackingDestinationCountry;
 @property (nonatomic, strong) NSString* trackingKey;
-@property (nonatomic, strong) NSString* slug;
+@property (nonatomic, strong) id slug;
 @property (nonatomic, strong) NSNumber * isActive;
 @property (nonatomic, strong) NSDictionary* customFields;
 @property (nonatomic, strong) NSString* customName;
 @property (nonatomic, strong) NSNumber* deliveryTime;
-@property (nonatomic, strong) NSString* destionationCountryCode;
-@property (nonatomic, strong) NSArray* emails;
+@property (nonatomic, strong) NSString* destinationCountryIso3;
+@property (nonatomic, strong) id emails;
 @property (nonatomic, strong) NSString* expectedDeliveryDate;
 @property (nonatomic, strong) NSString* orderId;
 @property (nonatomic, strong) NSString* orderIdPath;
@@ -36,14 +36,14 @@
 @property (nonatomic, strong) NSNumber* shipmentWeight;
 @property (nonatomic, strong) NSString* shipmentWeightUnit;
 @property (nonatomic, strong) NSString* signedBy;
-@property (nonatomic, strong) NSArray* smses;
+@property (nonatomic, strong) id smses;
 @property (nonatomic, strong) NSString* source;
 @property (nonatomic, strong) NSString* tag;
 @property (nonatomic, strong) NSString* title;
 @property (nonatomic, strong) NSNumber* trackedCount;
 @property (nonatomic, strong) NSArray* checkpoints;
-@property (nonatomic, strong) NSArray* android;
-@property (nonatomic, strong) NSArray* ios;
+@property (nonatomic, strong) id android;
+@property (nonatomic, strong) id ios;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 

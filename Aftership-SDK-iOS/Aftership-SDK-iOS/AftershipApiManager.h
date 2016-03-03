@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
 #import "AftershipBaseRequest.h"
+#import "AftershipMeta.h"
+#import "AftershipError.h"
 
 @interface AftershipApiManager : NSObject{
     
