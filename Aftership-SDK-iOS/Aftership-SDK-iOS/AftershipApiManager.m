@@ -37,4 +37,78 @@
     return [[self alloc] initWithApiKey:apiKey];
 }
 
+- (void)performRequest:(AftershipBaseRequest *)request{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.requestSerializer = JSONRequestSerializer;
+    
+    //Accept only JSON response, if non-JSON is returned, an error will occur during validation
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
+    
+    
+    NSString *fullUrl = [NSString stringWithFormat:@"%@%@", self.baseUrl, request.path];
+    
+    /*Declare common successful block:
+     By default handling, AFNetworking uses 'NSJSONSerialization' with 'NSJSONReadingMutableContainers' option to serialize response data and that generates mutable NSArrays and NSDictionaries.
+     */
+    void (^successfulBlock)(NSURLSessionDataTask * _Nonnull task, id _Nullable result) = ^(NSURLSessionDataTask * task, id resultData){
+        
+        // TODO: META HANDLING(set custom error): rate limit(Parse 'task.response')
+        // TODO: NON-JSON RESPONSE HANDLING
+        if (request.completionHandler) {
+            if ([resultData isKindOfClass:[NSArray class]]) {
+                request.completionHandler(request, (NSArray*)resultData, nil);
+            }else if([resultData isKindOfClass:[NSDictionary class]]){
+                request.completionHandler(request, (NSDictionary*)resultData, nil);
+            }
+        }
+    };
+    
+    //Declare common failure block
+    void (^failureBlock)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) = ^(NSURLSessionDataTask * task, NSError * error){
+        if (request.completionHandler) {
+            request.completionHandler(request, nil, error);
+        }
+    };
+    
+    switch (request.httpMtehod) {
+        case API_HTTP_METHOD_GET:
+        {
+            [manager GET:fullUrl
+              parameters:request.paramDict
+                progress:nil
+                 success:successfulBlock
+                 failure:failureBlock];
+        }
+            break;
+        case API_HTTP_METHOD_POST:
+        {
+            [manager POST:fullUrl
+               parameters:request.paramDict
+                 progress:nil
+                  success:successfulBlock
+                  failure:failureBlock];
+        }
+            break;
+        case API_HTTP_METHOD_DELETE:
+        {
+            [manager DELETE:fullUrl
+                 parameters:request.paramDict
+                    success:successfulBlock
+                    failure:failureBlock];
+        }
+            break;
+        case API_HTTP_METHOD_PUT:
+        {
+            [manager PUT:fullUrl
+              parameters:request.paramDict
+                 success:successfulBlock
+                 failure:failureBlock];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+
 @end
