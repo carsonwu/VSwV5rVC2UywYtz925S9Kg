@@ -54,7 +54,7 @@
 - (void)performRequest:(AftershipBaseRequest *)request{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = JSONRequestSerializer;
-    manager.securityPolicy.allowInvalidCertificates = YES;
+    manager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     
     //Accept only JSON response, if non-JSON is returned, an error will occur during validation
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
