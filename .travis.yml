@@ -5,4 +5,5 @@ xcode_scheme: AftershipSDKTests
 xcode_sdk: iphonesimulator9.2
 
 script:
-- xctool -workspace Aftership-SDK-iOS/Aftership-SDK-iOS.xcworkspace -scheme AftershipSDKTests -sdk iphonesimulator9.2 build test
+#- xctool -workspace Aftership-SDK-iOS/Aftership-SDK-iOS.xcworkspace -scheme AftershipSDKTests -sdk iphonesimulator9.2 build test
+- xctool -workspace Aftership-SDK-iOS/Aftership-SDK-iOS.xcworkspace -scheme AftershipSDKTests test -sdk iphonesimulator
