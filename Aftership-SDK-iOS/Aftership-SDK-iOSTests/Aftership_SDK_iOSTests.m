@@ -28,7 +28,7 @@
     
     //create a common tracking instance for create/get tracking api test, if want to test another tracking, just modify the properties below.
     tracking001 = [[AftershipTracking alloc] init];
-    tracking001.trackingNumber = @"4409020026";
+    tracking001.trackingNumber = @"4409020027";
     tracking001.slug = @"dhl";
     tracking001.emails = @[@"test@123.com", @"case@456.com"];
     tracking001.title = @"test title";
