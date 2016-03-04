@@ -7,12 +7,16 @@
 //
 
 #import "AftershipApiManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 //#define API_KEY       @"4d396a35-bcd8-4186-befb-460f877a7c5a"
 #define BASE_URL      @"https://api.aftership.com"
 #define API_VERSION   @"4"
 
-@implementation AftershipApiManager
+@implementation AftershipApiManager{
+    // Use 'AFJSONRequestSerializer' to perform JSON-encoded parameters request
+    AFJSONRequestSerializer *JSONRequestSerializer;
+}
 
 - (instancetype)initWithApiKey:(NSString *)apiKey {
     if (self == [super init]) {
@@ -25,9 +29,7 @@
                      forHTTPHeaderField:@"aftership-api-key"];
         [JSONRequestSerializer setValue:@"application/json"
                      forHTTPHeaderField:@"Content-Type"];
-        [JSONRequestSerializer setValue:[NSString stringWithFormat:@"aftership-ios-sdk %@",
-                                         [[[NSBundle mainBundle] infoDictionary]
-                                          objectForKey:@"CFBundleShortVersionString"]]
+        [JSONRequestSerializer setValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
                      forHTTPHeaderField:@"aftership-user-agent"];
     }
     return self;

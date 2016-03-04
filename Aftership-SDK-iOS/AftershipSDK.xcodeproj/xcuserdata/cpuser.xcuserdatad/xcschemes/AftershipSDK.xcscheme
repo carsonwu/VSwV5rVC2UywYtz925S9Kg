@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "37303AA11C85D181002A5232"
-               BuildableName = "Aftership-SDK-iOS.framework"
-               BlueprintName = "Aftership-SDK-iOS"
-               ReferencedContainer = "container:Aftership-SDK-iOS.xcodeproj">
+               BuildableName = "AftershipSDK.framework"
+               BlueprintName = "AftershipSDK"
+               ReferencedContainer = "container:AftershipSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37303AAB1C85D182002A5232"
-               BuildableName = "Aftership-SDK-iOSTests.xctest"
-               BlueprintName = "Aftership-SDK-iOSTests"
-               ReferencedContainer = "container:Aftership-SDK-iOS.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "37303AA11C85D181002A5232"
-            BuildableName = "Aftership-SDK-iOS.framework"
-            BlueprintName = "Aftership-SDK-iOS"
-            ReferencedContainer = "container:Aftership-SDK-iOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -65,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37303AA11C85D181002A5232"
-            BuildableName = "Aftership-SDK-iOS.framework"
-            BlueprintName = "Aftership-SDK-iOS"
-            ReferencedContainer = "container:Aftership-SDK-iOS.xcodeproj">
+            BuildableName = "AftershipSDK.framework"
+            BlueprintName = "AftershipSDK"
+            ReferencedContainer = "container:AftershipSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -83,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "37303AA11C85D181002A5232"
-            BuildableName = "Aftership-SDK-iOS.framework"
-            BlueprintName = "Aftership-SDK-iOS"
-            ReferencedContainer = "container:Aftership-SDK-iOS.xcodeproj">
+            BuildableName = "AftershipSDK.framework"
+            BlueprintName = "AftershipSDK"
+            ReferencedContainer = "container:AftershipSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
+//#import <AFNetworking/AFNetworking.h>
 #import "AftershipBaseRequest.h"
 #import "AftershipMeta.h"
 #import "AftershipError.h"
 
 @interface AftershipApiManager : NSObject{
     
-    // Use 'AFJSONRequestSerializer' to perform JSON-encoded parameters request
-    AFJSONRequestSerializer *JSONRequestSerializer;
+//    // Use 'AFJSONRequestSerializer' to perform JSON-encoded parameters request
+//    AFJSONRequestSerializer *JSONRequestSerializer;
 }
 
 @property (nonatomic, strong) NSString *apiKey;

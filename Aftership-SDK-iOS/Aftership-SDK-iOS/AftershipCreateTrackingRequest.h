@@ -15,6 +15,6 @@
 @property (nonatomic, strong) AftershipTracking *tracking;
 
 + (instancetype)requestWithTracking:(AftershipTracking *)tracking
-                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
+                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, id nullable, NSError *))completionBlock;
 
 @end

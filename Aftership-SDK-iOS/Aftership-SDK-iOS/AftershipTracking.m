@@ -73,7 +73,9 @@
     [dic setValue:self.orderId forKey:@"order_id"];
     [dic setValue:self.orderIdPath forKey:@"order_id_path"];
     [dic setValue:self.customFields forKey:@"custom_fields"];
-    return dic;
+    
+    NSDictionary *trackingDict = [NSDictionary dictionaryWithObject:dic forKey:@"tracking"];
+    return trackingDict;
 }
 
 @end

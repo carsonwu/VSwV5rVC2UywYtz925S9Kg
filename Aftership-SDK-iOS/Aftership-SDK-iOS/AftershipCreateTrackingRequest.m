@@ -11,7 +11,7 @@
 @implementation AftershipCreateTrackingRequest
 
 - (instancetype)initWithTracking:(AftershipTracking *)tracking
-                 completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                 completionBlock:(void (^)(AftershipCreateTrackingRequest *, id nullable, NSError *))completionBlock {
     self = [super init];
     if (self) {
         self.httpMtehod = API_HTTP_METHOD_POST;
@@ -24,7 +24,7 @@
 }
 
 + (instancetype)requestWithTracking:(AftershipTracking *)tracking
-                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                    completionBlock:(void (^)(AftershipCreateTrackingRequest *, id nullable, NSError *))completionBlock {
     return [[self alloc] initWithTracking:tracking
                           completionBlock:completionBlock];
 }

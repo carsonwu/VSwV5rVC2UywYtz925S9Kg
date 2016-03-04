@@ -23,9 +23,9 @@
 
 + (instancetype)requestWithTrackingNumber:(NSString *)trackingNumber
                                      slug:(NSString *)slug
-                          completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
+                          completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock;
 
 + (instancetype)requestWithIdentifier:(NSString *)identifier
-                      completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock;
+                      completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock;
 
 @end

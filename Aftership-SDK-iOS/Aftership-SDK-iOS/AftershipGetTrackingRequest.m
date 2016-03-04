@@ -12,7 +12,7 @@
 
 - (instancetype)initWithTrackingNumber:(NSString *)trackingNumber
                                   slug:(NSString *)slug
-                       completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                       completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock {
     self = [super init];
     if (self) {
         self.trackingNumber = trackingNumber;
@@ -26,13 +26,13 @@
 
 + (instancetype)requestWithTrackingNumber:(NSString *)trackingNumber
                                      slug:(NSString *)slug
-                          completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                          completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock {
     return [[self alloc] initWithTrackingNumber:trackingNumber slug:slug
                                 completionBlock:completionBlock];
 }
 
 - (instancetype)initWithIdentifier:(NSString *)identifier
-                   completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                   completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock {
     self = [super init];
     if (self) {
         self.identifier = identifier;
@@ -44,7 +44,7 @@
 }
 
 + (instancetype)requestWithIdentifier:(NSString *)identifier
-                      completionBlock:(void (^)(AftershipGetTrackingRequest *, AftershipTracking *, NSError *))completionBlock {
+                      completionBlock:(void (^)(AftershipGetTrackingRequest *, id nullable, NSError *))completionBlock {
     return [[self alloc] initWithIdentifier:identifier
                             completionBlock:completionBlock];
 }
@@ -66,7 +66,10 @@
     if (self.fields && [self.fields length]>0) {
         [params setObject:self.fields forKey:@"fields"];
     }
-    return params;
+    if (params&&[[params allKeys] count]>0) {
+        return params;
+    }else
+        return nil;
 }
 
 @end
